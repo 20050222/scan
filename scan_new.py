@@ -174,6 +174,11 @@ ref = cv2.adaptiveThreshold(
     C=3
 )
 
+# =========新增形态学降噪，去除雪花小点=========
+# 开运算：先腐蚀再膨胀，消除孤立小黑噪点
+kernel = np.ones((2,2), np.uint8)
+ref = cv2.morphologyEx(ref, cv2.MORPH_OPEN, kernel, iterations=1)
+
 cv2.imwrite("scan.jpg", ref)#将扫描结果保存为scan.jpg
 
 # 展示原图和 最终扫描效果图
