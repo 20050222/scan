@@ -158,10 +158,21 @@ warped = four_point_transform(orig, screenCnt.reshape(4, 2) * ratio)
 
 # step4 二值化：模拟扫描黑白文档效果
 warped = cv2.cvtColor(warped, cv2.COLOR_BGR2GRAY) #矫正后色彩图转灰度图
+# 轻微模糊，消除照片颗粒噪点
+warped = cv2.GaussianBlur(warped,(3,3),0)
+ref = cv2.adaptiveThreshold(warped,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,15,3)
 
 # 阈值二值化：大于100设置为255白色，小于100设置为0黑色：输出ref就是扫描效果
-ref = cv2.threshold(warped, 100, 255, cv2.THRESH_BINARY)[1]
-
+# ref = cv2.threshold(warped, 100, 255, cv2.THRESH_BINARY)[1]
+# 自适应高斯阈值，适合光线不均匀的文档照片
+ref = cv2.adaptiveThreshold(
+    warped,
+    255,
+    cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+    cv2.THRESH_BINARY,
+    blockSize=15,
+    C=3
+)
 
 cv2.imwrite("scan.jpg", ref)#将扫描结果保存为scan.jpg
 

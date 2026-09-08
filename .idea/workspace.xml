@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49a95eec-acf6-43d4-8b86-dd30a4773c88" name="Default" comment="" />
+    <list default="true" id="49a95eec-acf6-43d4-8b86-dd30a4773c88" name="Default" comment="文档识别项目第一版">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scan_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/scan_new.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +58,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -72,6 +78,7 @@
     <option name="height" value="1495" />
   </component>
   <component name="ProjectId" id="3J1n2e6OAQjIf51xUkXqZtxFxga" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -115,6 +122,7 @@
   "keyToString": {
     "Python.scan_new.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/develop/Pycharm/project/opencv/Scan",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -172,8 +180,17 @@
       <updated>1515441618959</updated>
       <workItem from="1788837240476" duration="1351000" />
       <workItem from="1788850633071" duration="3476000" />
-      <workItem from="1788854864569" duration="1972000" />
+      <workItem from="1788854864569" duration="2207000" />
     </task>
+    <task id="LOCAL-00001" summary="文档识别项目第一版">
+      <option name="closed" value="true" />
+      <created>1788857034946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1788857034946</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -205,6 +222,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="文档识别项目第一版" />
+    <option name="LAST_COMMIT_MESSAGE" value="文档识别项目第一版" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Scan$scan_new.coverage" NAME="scan_new 覆盖结果" MODIFIED="1788855809153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
